@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.7455f47a.css",
+    "main.js": "/react-gh-pages/static/js/main.cea1216c.js",
+    "static/media/lejczak.png": "/react-gh-pages/static/media/lejczak.0c4d63f741d80c637816.png",
+    "static/media/krzychu.png": "/react-gh-pages/static/media/krzychu.ef08465d0ecd0e88b894.png",
+    "static/media/baby_background_3.webp": "/react-gh-pages/static/media/baby_background_3.3ed2ede1228832d58da5.webp",
+    "static/media/baby_background_2.webp": "/react-gh-pages/static/media/baby_background_2.e53eafdeace71a6d7606.webp",
+    "static/media/kinia.png": "/react-gh-pages/static/media/kinia.957fad4f10e57837c22d.png",
+    "static/media/baby_background_1.webp": "/react-gh-pages/static/media/baby_background_1.00ea6cc2c32a40c80c2f.webp",
+    "index.html": "/react-gh-pages/index.html",
+    "main.7455f47a.css.map": "/react-gh-pages/static/css/main.7455f47a.css.map",
+    "main.cea1216c.js.map": "/react-gh-pages/static/js/main.cea1216c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7455f47a.css",
+    "static/js/main.cea1216c.js"
+  ]
+}
