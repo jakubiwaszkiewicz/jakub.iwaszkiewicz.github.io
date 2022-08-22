@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  overflow: hidden;
+  font-family: 'Chilanka', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* HelloPage */
+
+#HelloPage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("components/backgrounds/baby_background_1.webp") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#HelloPage header {
+  background: #394699;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: lightblue;
+  max-width: 80%;
+  border: 1px solid black;
+}
+
+#HelloPage h1 {
+  text-align: center;
+}
+
+#HelloPage h2 {
+  text-align: center;
+}
+
+#HelloPage--funny {
+  font-size: 3rem;
+}
+
+/* //// Right scroll button ////*/
+
+.scroll-1 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+/*  border: 2px solid black;*/
+  bottom: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-1 .scroll-top-bar {
+  width: 0;
+  border: 4px solid blueviolet;
+  border-radius: 4px;
+}
+
+.scroll-1 .scroll-top-bar-1 {
+  width: 100%;
+}
+
+.scroll-1 .scroll-top-bar-2 {
+  width: 70%;
+}
+
+.scroll-1 .scroll-top-bar-3 {
+  width: 30%;
+}
+
+.scroll-2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*  border: 2px solid black;*/
+  top: 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.scroll-2 .scroll-top-bar {
+  width: 0;
+  border: 4px solid blue;
+  border-radius: 4px;
+}
+
+.scroll-2 .scroll-top-bar-1 {
+  width: 30%;
+}
+
+.scroll-2 .scroll-top-bar-2 {
+  width: 70%;
+}
+
+.scroll-2 .scroll-top-bar-3 {
+  width: 100%;
+}
+
+/* //// KrzychuPage section ////*/
+
+#KrzychuPage {
+
+}
+
+/* //// Top button second page //// */
+
+
+
+/* //// KrzychuPage section ////*/
+
+#KrzychuPage {
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  background: url("components/backgrounds/baby_background_2.webp") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#KrzychuPage .content {
+  align-self: center;
+  display: flex;
+  gap: 2em;
+  padding: 1em 0;
+}
+
+#KrzychuPage img {
+  max-width: 300px;
+  width: 50%;
+  display: block;
+  border-radius: 1em;
+  border: 1px solid black;
+}
+
+#KrzychuPage .text {
+  display: flex;
+  flex-flow: column;
+  max-width: 300px;
+  width: 50%;
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 1em;
+  color: #c4a9e0;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+/* //// another button  //// */
+
+#scroll-4{}
+
+/* //// WhySite main  //// */
+/* //// top button //// */
+#WhyPage {
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  background: url("components/backgrounds/baby_background_3.webp") no-repeat;
+  background-size: cover;
+  position: relative;
+}

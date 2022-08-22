@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /*overflow: hidden;*/
+  font-family: 'Chilanka', cursive;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* HelloPage */
+
+#HelloPage {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: url("components/backgrounds/baby_background_1.webp") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#HelloPage header {
+  background: #394699;
+  padding: 1rem;
+  border-radius: 3rem;
+  color: lightblue;
+  max-width: 80%;
+  border: 1px solid black;
+}
+
+#HelloPage h1, h2 {
+  text-align: center;
+}
+
+#HelloPage--funny {
+  font-size: 3rem;
+}
+
+/* //// Right scroll button ////*/
+@mixin stdBtnProperties () {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  /*  border: 2px solid black;*/
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  &:hover .bar {
+    border: 4px solid #d67fee;
+  }
+  &:hover .top-bar {
+    transform: translateY(-10px);
+  }
+  &:hover .bottom-bar {
+    transform: translateY(10px);
+  }
+}
+.scroll-bottom {
+  @include stdBtnProperties ();
+  bottom: 10px;
+}
+
+.bar {
+  width: 0;
+  border: 4px solid #9b6bd2;
+  border-radius: 4px;
+  transition: border 1s, transform 1s;
+}
+
+.scroll-bottom .top-bar {
+  width: 100%;
+}
+
+.scroll-bottom .middle-bar {
+  width: 50%;
+}
+
+.scroll-bottom .bottom-bar {
+  width: 20%;
+}
+
+.buttonColor #scroll-1 .bar {
+  border: 4px solid #f1eef4;
+}
+
+.scroll-top {
+  @include stdBtnProperties ();
+  top: 10px;
+}
+
+.scroll-top .top-bar {
+  width: 30%;
+}
+
+.scroll-top .middle-bar {
+  width: 70%;
+}
+
+.scroll-top .bottom-bar {
+  width: 100%;
+}
+
+
+
+/* //// KrzychuPage section ////*/
+
+@mixin templatePage($background-url) {
+  padding: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: 100vh;
+  background: url($background-url), no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#KrzychuPage {
+  @include templatePage("components/backgrounds/baby_background_2.webp");
+
+  .krzychu--container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+  }
+
+  .content {
+    align-self: center;
+    display: flex;
+    gap: 2em;
+    padding: 1em 0;
+  }
+
+  img {
+    flex: 0 0 auto;
+    width: 30%;
+    border-radius: 1em;
+    border: 1px solid black;
+  }
+
+}
+p {
+  margin: 0;
+}
+#KrzychuPage .text {
+  display: flex;
+  flex-flow: column;
+  max-width: 300px;
+  width: 50%;
+  background-color: blueviolet;
+  border: 1px solid black;
+  border-radius: 1em;
+  color: #c4a9e0;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+/* //// WhySite main  //// */
+
+#WhyPage {
+  @include templatePage("components/backgrounds/baby_background_3.webp")
+}
+#WhyPage div {
+  background: #d67fee;
+  border-radius: 1rem;
+  p {
+    margin: 1em 0 0 0;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #f2e0f9;
+    text-align: justify;
+    background: #cd69e7;
+    border-radius: 1em;
+  }
+  img {
+    width: 40%;
+    border-radius: 2em;
+    border: 1px solid black;
+  }
+}
+.content--container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+}
+p {
+  text-align: justify;
+}
+/* //// top button //// */
